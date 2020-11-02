@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="5-demo-index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Trump Election Day Quiz</h1>
+  </header>
+  <main aria-live="polite">
+
+    <ul class="question-and-score">
+      <li id="question-number">
+        Question Number: 1/5
+      </li>
+      <li id="score">
+        Score: 0/5
+      </li>
+    </ul>
+    <form id="question-form" class="question-form">
+       <fieldset>
+        <div class="question">
+          <legend>
+While campaigning, Donald Trump announced that he could be more presidential than any president ever, except for the
+possible exception of :
+          </legend>
+        </div>
+        <div class=options">
+          <div class=answer">
+            <div id="option-container-0">
+
+              <input type="radio" name="option" id="option1" value="That one, you know, who did World War II" required>
+              <label for="option1">
+                That one, you know, who did World War II
+              </label>
+              </div>
+              
+              <div id="option-container-1">
+                <input type="radio" name="option" id="option2" value="Abraham Lincoln when he's wearing the hat" required>
+                <label for="option2">
+                  Abraham Lincoln when he's wearing the hat
+              </div>
+              
+              <div id="option-container-2">
+                <input type="radio" name="option" id="option3" value="George Washington crossing the Delaware" required>
+                <label for="option3">
+                  George Washington crossing the Delaware
+              </div>
+              
+              
+              <div id="option-container-3">
+                <input type="radio" name="option" id="option4" value="Jimmy Carter visiting Egypt for the Middle East treaty"
+                  required>
+                <label for="option4">
+                  Jimmy Carter visiting Egypt for the Middle East treaty
+              </div>
+
+
+
+            <button type="submit" id="submit-answer-btn" tabindex="5">Submit</button>
+            <!-- <button type="button" id="next-question-btn" tabindex="6"> Next &gt;></button> -->
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
